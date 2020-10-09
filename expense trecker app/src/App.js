@@ -4,12 +4,15 @@ import { Blance } from './components/Blance'
 import IncomExpense from './components/IncomExpense'
 import Incomtransetion from './components/TransetionList'
 import AddTransiction from './components/AddTransaction'
+//import Navebar from './components/naveBar'
 import './App.css';
 
 import { GlobalProvider } from "./components/globalstate";
 
 function App() {
+ 
   return (
+
     <GlobalProvider >
       <Header />
       <div className="container">

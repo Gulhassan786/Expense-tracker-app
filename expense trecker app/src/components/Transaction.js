@@ -1,10 +1,11 @@
-import React, { useReducer, useContext } from 'react';
+import React, { useContext } from 'react';
 //import Reducer from './AppReducer'
 import GlobalContext from "./globalstate";
 
 export const Transaction = ({ transaction }) => {
 
     const { DeletTransaction } = useContext(GlobalContext);
+    console.log(DeletTransaction , "delettransaction in transaction.js")
 
     const sign = transaction.amount < 0 ? '-' : '+';
     // const [amount, dispatch] = useReducer(Reducer)
